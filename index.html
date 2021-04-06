@@ -9,16 +9,43 @@
         <!-- STYLE -->
         <style>
             body {
-                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
                 margin: 0;
             }
 
             .logo {
                 border: white 3px double;
-                margin: 30px;
+                border-radius: 2px;
 
                 max-width: calc(100vw - 72px);
                 max-height: calc(100vh - 72px);
+            }
+
+            .blurry-background {
+                background-image: url("opalescent-cone.png");
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: -10;
+                filter: blur(40px);
+            }
+
+            /* MOBILE STYLES */
+            @media only screen and (max-width: 720px) {
+                .blurry-background {
+                    /* width: 400%; */
+                }
+
+                .logo {
+                    border: white 3px double;
+                    border-radius: 3px;
+
+                    max-width: calc(100vw - 36px);
+                    max-height: calc(100vh - 36px);
+                }
             }
 
             /* FADE IN STUFF */
@@ -53,21 +80,10 @@
                 0% {opacity:0;}
                 100% {opacity:1;}
             }
-
-            .blurry-background {
-                background-image: url("opalescent-cone.png");
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                z-index: -10;
-                filter: blur(40px);
-            }
         </style>
     </head>
     <body>
         <div class="blurry-background"></div>
-        <div class="logo-wrapper">
-            <img class="logo fade-in" src="opalescent-cone.png" alt="Opalescent Cyclery - Coming Soon! Spring/Summer 2021">
-        </div>
+        <img class="logo fade-in" src="opalescent-cone.png" alt="Opalescent Cyclery - Coming Soon! Spring/Summer 2021">
     </body>
 </html>
