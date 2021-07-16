@@ -14,23 +14,7 @@
             font-size: 20px;
             text-align: center;
             padding: 20px 30px;
-            
-        }
-
-        .bg {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-
-        .bg.image {
-            background-image: url("assets/Opalescent-transparent.png");
-            background-position: center;
-            background-size: cover;
-            z-index: -100;
-            opacity: 0.03;
+            font-family: 'Courier New', monospace;
         }
 
         main {
@@ -44,6 +28,15 @@
 
         hr {
             border: solid black 2px;
+        }
+
+        h1, h3 {
+            font-weight: 400;
+        }
+
+        a,
+        a:visited {
+            color: gray;
         }
 
         .logo {
@@ -96,6 +89,14 @@
         }
 
         /* https://www.gradient-animator.com */
+        .bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
         .bg.irridescent {
             z-index: -200;
             background: linear-gradient(270deg, #82ffdf, #ff9a6f, #feff78, #83e5ff, #eeeeff, #ffa9ea, #ff8989, #ffffff);
@@ -126,7 +127,7 @@
 
 <body>
     <header>
-        <img class="logo rotate" alt="Opalescent Cyclery logo" src="./assets/Opalescent-transparent.png">
+        <img class="logo" alt="Opalescent Cyclery logo" src="./assets/Opalescent-transparent.png">
         <div class="header-text">
             <h1>
                 Opalescent Cyclery
@@ -147,5 +148,4 @@
     </main>
     <div class="bg irridescent"></div>
 </body>
-
 </html>
