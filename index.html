@@ -1,93 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- SEO STUFF -->
-        <title>&#9674; Opalescent Cyclery &#9674;</title>
-        <meta name="description" content="">
-        <meta name="robots" content="index, follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- STYLE -->
-        <style>
-            body {
-                margin: 0;
+<head>
+    <!-- SEO STUFF -->
+    <title>&#9674; Opalescent Cyclery &#9674;</title>
+    <meta name="description" content="Opalescent Cyclery - Bicycle Repair - Tacoma">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- STYLE -->
+    <style>
+        body {
+            font-size: 20px;
+            text-align: center;
+            padding: 20px 30px;
+            
+        }
+
+        .bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .bg.image {
+            background-image: url("assets/Opalescent-transparent.png");
+            background-position: center;
+            background-size: cover;
+            z-index: -100;
+            opacity: 0.03;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        ul {
+            padding-left: 0;
+            margin: 0;
+        }
+
+        hr {
+            border: solid black 2px;
+        }
+
+        .logo {
+            max-height: 160px;
+        }
+
+        .header-text {
+            display: inline-block;
+            margin-left: 50px;
+            margin-right: 50px;
+            vertical-align: top;
+        }
+
+        ul.inline li{
+            display: inline;
+        }
+
+        .dot-separated li::before{
+            content: "\25C7";
+        }
+
+        .dot-separated li:first-of-type:before{
+            content: "";
+            margin-right: 0;
+        }
+
+        .horizontal-spacing {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .horizontal-spacing:first-of-type {
+            margin-left: 0;
+        }
+
+        .horizontal-spacing:last-of-type {
+            margin-right: 0;
+        }
+
+        @media only screen and (min-width: 831px) {
+            .mobile-only {
+                display: none;
             }
+        }
 
-            .splash-content {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100vh;
+        @media only screen and (max-width: 830px) {
+            .desktop-only {
+                display: none;
             }
+        }
 
-            .logo {
-                border: white 3px double;
-                border-radius: 2px;
+        /* https://www.gradient-animator.com */
+        .bg.irridescent {
+            z-index: -200;
+            background: linear-gradient(270deg, #82ffdf, #ff9a6f, #feff78, #83e5ff, #eeeeff, #ffa9ea, #ff8989, #ffffff);
+            background-size: 1600% 1600%;
 
-                max-width: calc(100vw - 72px);
-                max-height: calc(100vh - 72px);
-            }
+            -webkit-animation: Irridescent 10s ease infinite;
+            -moz-animation: Irridescent 10s ease infinite;
+            animation: Irridescent 10s ease infinite;
+        }
 
-            .blurry-background {
-                background-image: url("assets/opalescent-cone.jpg");
-                background-repeat: repeat;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                z-index: -10;
-                filter: blur(40px);
-            }
+        @-webkit-keyframes Irridescent {
+            0%{background-position:45% 0%}
+            50%{background-position:56% 100%}
+            100%{background-position:45% 0%}
+        }
+        @-moz-keyframes Irridescent {
+            0%{background-position:45% 0%}
+            50%{background-position:56% 100%}
+            100%{background-position:45% 0%}
+        }
+        @keyframes Irridescent { 
+            0%{background-position:45% 0%}
+            50%{background-position:56% 100%}
+            100%{background-position:45% 0%}
+        }
+    </style>
+</head>
 
-            /* MOBILE STYLES */
-            @media only screen and (max-width: 720px) {
-
-                .logo {
-                    border: white 3px double;
-                    border-radius: 3px;
-
-                    max-width: calc(100vw - 36px);
-                    max-height: calc(100vh - 36px);
-                }
-            }
-
-            /* FADE IN STUFF */
-            .fade-in {
-                animation: fadeIn ease 10s;
-                -webkit-animation: fadeIn ease 10s;
-                -moz-animation: fadeIn ease 10s;
-                -o-animation: fadeIn ease 10s;
-                -ms-animation: fadeIn ease 10s;
-            }
-            @keyframes fadeIn {
-                0% {opacity:0;}
-                100% {opacity:1;}
-            }
-
-            @-moz-keyframes fadeIn {
-                0% {opacity:0;}
-                100% {opacity:1;}
-            }
-
-            @-webkit-keyframes fadeIn {
-                0% {opacity:0;}
-                100% {opacity:1;}
-            }
-
-            @-o-keyframes fadeIn {
-                0% {opacity:0;}
-                100% {opacity:1;}
-            }
-
-            @-ms-keyframes fadeIn {
-                0% {opacity:0;}
-                100% {opacity:1;}
-            }
-        </style>
-    </head>
-    <body>
-        <div class="blurry-background"></div>
-        <div class="splash-content">
-            <img class="logo fade-in" src="assets/opalescent-cone.jpg" alt="Opalescent Cyclery - Coming Soon! Spring/Summer 2021">
+<body>
+    <header>
+        <img class="logo rotate" alt="Opalescent Cyclery logo" src="./assets/Opalescent-transparent.png">
+        <div class="header-text">
+            <h1>
+                Opalescent Cyclery
+            </h1>
+            <h3>Bicycle Repair</h3>
         </div>
-    </body>
+        <img class="logo desktop-only" alt="Opalescent Cyclery logo" src="./assets/Opalescent-transparent.png">
+    </header>
+    <hr>
+    <main>
+            <br>
+            <a href="https://goo.gl/maps/e4TJxpiDsvC7u2636">814 6th Avenue <br/> Tacoma, WA 98405</a>
+            <br>
+            <br>
+            No phone.... yet.
+            <br>
+            <a href="mailto:shop@opalescentcyclery.com">Customer Info &amp; Inquiries</a>
+    </main>
+    <div class="bg irridescent"></div>
+</body>
+
 </html>
