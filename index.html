@@ -122,6 +122,60 @@
             50%{background-position:56% 100%}
             100%{background-position:45% 0%}
         }
+
+        .marquee {
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            width: 300px;
+            margin: 0 auto;
+        }
+        
+        .marquee p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 1s linear infinite;
+            -webkit-animation: scroll-left 1s linear infinite;
+            animation: scroll-left 10s linear infinite;
+        }
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
     </style>
 </head>
 
@@ -139,6 +193,11 @@
     <hr>
     <main>
             <br>
+            <div class="marquee">
+                <p>
+                    Under Construction
+                </p>
+            </div>
             <a href="https://goo.gl/maps/e4TJxpiDsvC7u2636">814 6th Avenue<br/>Tacoma, WA 98405</a>
             <br>
             <br>
