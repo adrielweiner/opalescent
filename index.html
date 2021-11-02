@@ -8,203 +8,173 @@
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- STYLE -->
-    <style>
-        body {
-            font-size: 20px;
-            text-align: center;
-            padding: 20px 30px;
-            font-family: 'Courier New', monospace;
-        }
-
-        main {
-            text-align: center;
-        }
-
-        ul {
-            padding-left: 0;
-            margin: 0;
-        }
-
-        hr {
-            border: solid black 2px;
-        }
-
-        h1, h3 {
-            font-weight: 400;
-        }
-
-        a,
-        a:visited {
-            color: gray;
-        }
-
-        .logo {
-            max-height: 160px;
-        }
-
-        .header-text {
-            display: inline-block;
-            margin-left: 50px;
-            margin-right: 50px;
-            vertical-align: top;
-        }
-
-        ul.inline li{
-            display: inline;
-        }
-
-        .dot-separated li::before{
-            content: "\25C7";
-        }
-
-        .dot-separated li:first-of-type:before{
-            content: "";
-            margin-right: 0;
-        }
-
-        .horizontal-spacing {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-
-        .horizontal-spacing:first-of-type {
-            margin-left: 0;
-        }
-
-        .horizontal-spacing:last-of-type {
-            margin-right: 0;
-        }
-
-        @media only screen and (min-width: 831px) {
-            .mobile-only {
-                display: none;
-            }
-        }
-
-        @media only screen and (max-width: 830px) {
-            .desktop-only {
-                display: none;
-            }
-        }
-
-        /* https://www.gradient-animator.com */
-        .bg {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-
-        .bg.irridescent {
-            z-index: -200;
-            background: linear-gradient(270deg, #82ffdf, #ff9a6f, #feff78, #83e5ff, #eeeeff, #ffa9ea, #ff8989, #ffffff);
-            background-size: 1600% 1600%;
-
-            -webkit-animation: Irridescent 10s ease infinite;
-            -moz-animation: Irridescent 10s ease infinite;
-            animation: Irridescent 10s ease infinite;
-        }
-
-        @-webkit-keyframes Irridescent {
-            0%{background-position:45% 0%}
-            50%{background-position:56% 100%}
-            100%{background-position:45% 0%}
-        }
-        @-moz-keyframes Irridescent {
-            0%{background-position:45% 0%}
-            50%{background-position:56% 100%}
-            100%{background-position:45% 0%}
-        }
-        @keyframes Irridescent { 
-            0%{background-position:45% 0%}
-            50%{background-position:56% 100%}
-            100%{background-position:45% 0%}
-        }
-
-        .marquee {
-            height: 50px;
-            overflow: hidden;
-            position: relative;
-            width: 300px;
-            margin: 0 auto;
-        }
-        
-        .marquee p {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            line-height: 50px;
-            text-align: center;
-            -moz-transform: translateX(100%);
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-            -moz-animation: scroll-left 1s linear infinite;
-            -webkit-animation: scroll-left 1s linear infinite;
-            animation: scroll-left 10s linear infinite;
-        }
-        
-        @-moz-keyframes scroll-left {
-            0% {
-                -moz-transform: translateX(100%);
-            }
-            100% {
-                -moz-transform: translateX(-100%);
-            }
-        }
-        
-        @-webkit-keyframes scroll-left {
-            0% {
-                -webkit-transform: translateX(100%);
-            }
-            100% {
-                -webkit-transform: translateX(-100%);
-            }
-        }
-        
-        @keyframes scroll-left {
-            0% {
-                -moz-transform: translateX(100%);
-                -webkit-transform: translateX(100%);
-                transform: translateX(100%);
-            }
-            100% {
-                -moz-transform: translateX(-100%);
-                -webkit-transform: translateX(-100%);
-                transform: translateX(-100%);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <img class="logo" alt="Opalescent Cyclery logo" src="./assets/Opalescent-transparent.png">
+        <!-- <img class="logo" alt="Opalescent Cyclery logo" src="./assets/Opalescent-transparent.png"> -->
         <div class="header-text">
-            <h1>
+            <h1 class="margin-none line-height">
                 Opalescent Cyclery
             </h1>
-            <h3>Bicycle Repair</h3>
+            <h3 class="margin-none">
+                Bicycle Repair
+            </h3>
         </div>
-        <img class="logo desktop-only" alt="Opalescent Cyclery logo" src="./assets/Opalescent-transparent.png">
+        <!-- <img class="logo desktop-only" alt="Opalescent Cyclery logo" src="./assets/Opalescent-transparent.png"> -->
     </header>
     <hr>
     <main>
-            <br>
-            <div class="marquee">
-                <p>
-                    Under Construction
-                </p>
-            </div>
-            <a href="https://goo.gl/maps/e4TJxpiDsvC7u2636">814 6th Avenue<br/>Tacoma, WA 98405</a>
-            <br>
-            <br>
-            No phone.... yet.
-            <br>
-            <a href="mailto:shop@opalescentcyclery.com">Customer Info &amp; Inquiries</a>
+        <section class="contact">
+            <h2>Contact</h2>
+
+            <!-- Address & Google Maps Link -->
+            <!-- change url after 'href="' to change the link -->
+            <!-- change content between > & < to change what displays -->
+            <a href="https://goo.gl/maps/e4TJxpiDsvC7u2636">814 6th Avenue<br />Tacoma, WA 98405</a>
+
+            <!-- Telephone Link -->
+            <!-- change number after 'href="tel:' to change what number gets called  -->
+            <!-- change content between > & < to change what displays -->
+            <a href="tel:2538675309">(253) 867-5309</a>
+
+            <!-- Email Link -->
+            <!-- change email after 'href="mailto:' to change what email opens  -->
+            <!-- change content between > & < to change what displays -->
+            <a href="mailto:shop@opalescentcyclery.com">shop@opalescentcyclery.com</a>
+        </section>
+        <section class="services">
+            <h2>Services</h2>
+            <ul role="list">
+                <!-- Basic Tune -->
+                <li>
+                    <h3 class="margin-no-top">
+                        Basic Tune
+                        <span class="pull-right">
+                            <sup>$</sup>85
+                        </span>
+                    </h3>
+                    <ul role="list">
+                        <li class="single-dash">Align and adjust brakes</li>
+                        <li class="single-dash">Adjust cable tension and derailleur alignment</li>
+                        <li class="single-dash">Adjust headset</li>
+                        <li class="single-dash">Inspect bottom bracket</li>
+                        <li class="single-dash margin-bottom">Inflate tires</li>
+                        <li class="single-star">does include flat fix service/tubeless re-juice service</li>
+                        <li class="double-star">does not include hydraulic brake bleed</li>
+                        <li class="double-star">does not include brake pad, chain, tubeless setup and cable installation services</li>
+                    </ul>
+                </li>
+
+                <!-- Standard Tune -->
+                <li>
+                    <h3>
+                        Standard Tune
+                        <span class="pull-right">
+                            <sup>$</sup>110
+                        </span>
+                    </h3>
+                    <ul role="list">
+                        <li class="single-dash">Everything listed in the Basic Tune</li>
+                        <li class="single-dash">Lateral and vertical wheel true</li>
+                        <li class="single-dash margin-bottom">Adjust hub bearings</li>
+                        <li class="single-star">does include flat fix service/tubeless re-juice service</li>
+                        <li class="double-star">does not include hydraulic brake bleed</li>
+                        <li class="double-star">does not include brake pad, chain, tubeless setup and cable installation services</li>
+                    </ul>
+                </li>
+
+                <!-- Full Tune -->
+                <li>
+                    <h3>
+                        Full Tune
+                        <span class="pull-right">
+                            <sup>$</sup>189
+                        </span>
+                    </h3>
+                    <ul role="list">
+                        <li class="single-dash">Everything listed in Standard Tune</li>
+                        <li class="single-dash margin-bottom">Full removal of drivetrain components for deep clean</li>
+                        <li class="single-star">does include flat fix service/tubeless re-juice service</li>
+                        <li class="double-star">does not include hydraulic brake bleed</li>
+                        <li class="double-star">does not include brake pad, chain, tubeless setup and cable installation services</li>
+                    </ul>
+                </li>
+
+                <!-- Singlespeed Tune -->
+                <li>
+                    <h3>
+                        Single Speed Tune
+                        <span class="pull-right">
+                            <sup>$</sup>65
+                        </span>
+                    </h3>
+                    <ul role="list">
+                        <li class="single-dash">Align and adjust brakes</li>
+                        <li class="single-dash">Torque all fasteners</li>
+                        <li class="single-dash">Hubs and headset adjusted</li>
+                        <li class="single-dash">Bottom bracket inspected</li>
+                        <li class="single-dash margin-bottom">Inflate tires</li>
+                        <li class="single-star">chain install and flat fix/ tubeless re-juice service included</li>
+                        <li class="double-star">does not include hydraulic brake bleed</li>
+                        <li class="double-star">does not include brake pad, chain, tubeless setup and cable installation services</li>
+                    </ul>
+                </li>
+
+                <!-- Complete Tune -->
+                <li>
+                    <h3>
+                        Complete Tune
+                        <span class="pull-right">
+                            <sup>$</sup>399+
+                        </span>
+                    </h3>
+                    <ul role="list">
+                        <li class="single-dash">Everything listed in the Full Tune</li>
+                        <li class="single-dash">Complete bike disassembly and all drivetrain parts cleaned</li>
+                        <li class="single-dash margin-bottom">Bearings replaced</li>
+                        <li class="single-star">Includes standard cable and housing</li>
+                        <li class="single-star">Includes hydraulic brake bleed and fluid</li>
+                        <li class="single-star">standard cable and housing is included</li>
+                        <li class="double-star">does include flat fix service/tubeless re-juice service</li>
+                        <li class="double-star">does not include hydraulic brake bleed</li>
+                        <li class="double-star">does not include brake pad, chain, tubeless setup and cable installation services</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="brands">
+            <h2>Brands</h2>
+            <ul role="list" class="logos">
+                <li>
+                    <img src="assets/images/logos/kraft.png" />
+                </li>
+                <li>
+                    <img src="assets/images/logos/kraft.png" />
+                </li>
+                <li>
+                    <img src="assets/images/logos/kraft.png" />
+                </li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>About</h2>
+            <p>
+                Drop in off a shallow rock slab and then whip through a few tight berms. Out of the parking lot, take your first left. The turns are all smooth berms and easy to ride and not wash out. Have fun and hang on tight! So be careful with your carbon frames!
+            </p>
+            <p>
+                Logs embedded in the trail have been installed to signal technical terrain. Sadly, a better trail in this same zone (Barney Lake) is designated wilderness and is therefore 'unlawful' to ride. The climb up from Marlette Lake trail is pretty tough, but relatively short. Chewed up, lots of braking bumps, but still fun. Mostly dry with some small mud puddles.
+            </p>
+            <p>
+                Although it's not technical there are plenty of opportunities to slip in the loose rock and end up with some serious road rash, especially at the speeds you'll be going on the downhills! After a very quick downhill out of the gate, the route climbs up through big forest. Starts off flowy with some good jumps then gets into more technical rock gardens. Freeze-thaw cycle isn't awful, but does make this trail rather slick. Check yourself before you wreck yourself.
+            </p>
+        </section>
     </main>
-    <div class="bg irridescent"></div>
+    <div class="bg irridescent">
+        <!-- <img src="assets/images/opalescent.jpg" /> -->
+    </div>
 </body>
+
 </html>
