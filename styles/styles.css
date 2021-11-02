@@ -1,11 +1,11 @@
 @font-face {
     font-family: OktaNeue;
-    src: url(assets/fonts/OktaNeueUltraLight/font.woff2);
+    src: url(../assets/fonts/OktaNeueUltraLight/font.woff2);
 }
 
 @font-face {
     font-family: OktaNeueBold;
-    src: url(assets/fonts/OktaNeueBlackItalic/font.woff2);
+    src: url(../assets/fonts/OktaNeueBlackItalic/font.woff2);
 }
 
 body {
@@ -36,11 +36,18 @@ body {
     float: right;
 }
 
+main,
+header {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 main {
     /* text-align: center; */
     /* margin-top: 20px; */
     /* margin-bottom: 20px; */
-    max-width: 600px;
+    /* max-width: 600px; */
+
 }
 
 ul {
@@ -116,13 +123,17 @@ ul.inline li {
 /* CONTACt */
 .contact a {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .contact a:last-of-type {
     margin-bottom: 0;
 }
 
+/* ABOUT */
+.images img {
+    max-width: 100%;
+}
 
 /* BRANDS */
 .logos {

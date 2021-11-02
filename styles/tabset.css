@@ -1,0 +1,88 @@
+/* https://levelup.gitconnected.com/tabbed-interfaces-without-javascript-661bab1eaec8 */
+
+.tabset > input {
+    display: block; /* "enable" hidden elements in IE/edge */
+    position: absolute; /* then hide them off-screen */
+    left: -100%;
+  }
+  
+  .tabset > ul {
+    position:relative;
+    z-index:999;
+    list-style:none;
+    display:flex;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+  }
+  
+  .tabset > ul label {
+    display:inline-block;
+    cursor: pointer;
+    font-size: 1.17em;
+  }
+  
+  .tabset > div {
+    position:relative;
+  }
+  
+  .tabset > input:nth-child(1):focus ~ ul li:nth-child(1) label,
+  .tabset > input:nth-child(2):focus ~ ul li:nth-child(2) label,
+  .tabset > input:nth-child(3):focus ~ ul li:nth-child(3) label,
+  .tabset > input:nth-child(4):focus ~ ul li:nth-child(4) label,
+  .tabset > input:nth-child(5):focus ~ ul li:nth-child(5) label,
+  .tabset > input:nth-child(6):focus ~ ul li:nth-child(6) label,
+  .tabset > input:nth-child(7):focus ~ ul li:nth-child(7) label,
+  .tabset > input:nth-child(8):focus ~ ul li:nth-child(8) label,
+  .tabset > input:nth-child(9):focus ~ ul li:nth-child(9) label {
+      font-weight: 900;
+      font-family: "";
+      font-family: 'OktaNeueBold', monospace;
+  }
+  
+  .tabset > input:nth-child(1):checked ~ ul li:nth-child(1) label,
+  .tabset > input:nth-child(2):checked ~ ul li:nth-child(2) label,
+  .tabset > input:nth-child(3):checked ~ ul li:nth-child(3) label,
+  .tabset > input:nth-child(4):checked ~ ul li:nth-child(4) label,
+  .tabset > input:nth-child(5):checked ~ ul li:nth-child(5) label,
+  .tabset > input:nth-child(6):checked ~ ul li:nth-child(6) label,
+  .tabset > input:nth-child(7):checked ~ ul li:nth-child(7) label,
+  .tabset > input:nth-child(8):checked ~ ul li:nth-child(8) label,
+  .tabset > input:nth-child(9):checked ~ ul li:nth-child(9) label {
+    /* background:hsl(220, 100%, 98%); */
+    /* border-bottom-color:hsl(220, 100%, 98%); */
+    font-weight: 900;
+    font-family: "";
+    font-family: 'OktaNeueBold', monospace;
+  }
+  
+  .tabset > div > section,
+  .tabset > div > section h2 {
+    position:absolute;
+    top:-999em;
+    left:-999em;
+  }
+  .tabset > div > section {
+    /* padding:1em 1em 0; */
+  }
+  
+  .tabset > input:nth-child(1):checked ~ div > section:nth-child(1),
+  .tabset > input:nth-child(2):checked ~ div > section:nth-child(2),
+  .tabset > input:nth-child(3):checked ~ div > section:nth-child(3),
+  .tabset > input:nth-child(4):checked ~ div > section:nth-child(4),
+  .tabset > input:nth-child(5):checked ~ div > section:nth-child(5),
+  .tabset > input:nth-child(6):checked ~ div > section:nth-child(6),
+  .tabset > input:nth-child(7):checked ~ div > section:nth-child(7),
+  .tabset > input:nth-child(8):checked ~ div > section:nth-child(8),
+  .tabset > input:nth-child(9):checked ~ div > section:nth-child(9) {
+    position:Static;
+  }
+  
+  .tabset > ul label {
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+  }

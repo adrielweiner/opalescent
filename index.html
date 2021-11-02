@@ -8,7 +8,9 @@
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/tabset.css">
+
 </head>
 
 <body>
@@ -25,14 +27,50 @@
         <!-- <img class="logo desktop-only" alt="Opalescent Cyclery logo" src="./assets/Opalescent-transparent.png"> -->
     </header>
     <hr>
-    <main>
+    <main class="tabset">
+            <input
+                type="radio"
+                name="tabset_1"
+                id="tabset_1_contact"
+                hidden
+                aria-hidden="true"
+                checked
+            >
+            <input
+                type="radio"
+                name="tabset_1"
+                id="tabset_1_services"
+                hidden
+                aria-hidden="true"
+            >
+            <input
+                type="radio"
+                name="tabset_1"
+                id="tabset_1_about"
+                hidden
+                aria-hidden="true"
+            >
+            <input
+                type="radio"
+                name="tabset_1"
+                id="tabset_1_brands"
+                hidden
+                aria-hidden="true"
+            >
+            <ul hidden aria-hidden="true">
+                <li><label for="tabset_1_contact">Contact</label></li>
+                <li><label for="tabset_1_services">Services</label></li>
+                <li><label for="tabset_1_about">About</label></li>
+                <li><label for="tabset_1_brands">Brands</label></li>
+            </ul>
+            <div>
         <section class="contact">
             <h2>Contact</h2>
 
             <!-- Address & Google Maps Link -->
             <!-- change url after 'href="' to change the link -->
             <!-- change content between > & < to change what displays -->
-            <a href="https://goo.gl/maps/e4TJxpiDsvC7u2636">814 6th Avenue<br />Tacoma, WA 98405</a>
+            <a class="line-height" href="https://goo.gl/maps/e4TJxpiDsvC7u2636">814 6th Avenue<br />Tacoma, WA 98405</a>
 
             <!-- Telephone Link -->
             <!-- change number after 'href="tel:' to change what number gets called  -->
@@ -102,26 +140,6 @@
                     </ul>
                 </li>
 
-                <!-- Singlespeed Tune -->
-                <li>
-                    <h3>
-                        Single Speed Tune
-                        <span class="pull-right">
-                            <sup>$</sup>65
-                        </span>
-                    </h3>
-                    <ul role="list">
-                        <li class="single-dash">Align and adjust brakes</li>
-                        <li class="single-dash">Torque all fasteners</li>
-                        <li class="single-dash">Hubs and headset adjusted</li>
-                        <li class="single-dash">Bottom bracket inspected</li>
-                        <li class="single-dash margin-bottom">Inflate tires</li>
-                        <li class="single-star">chain install and flat fix/ tubeless re-juice service included</li>
-                        <li class="double-star">does not include hydraulic brake bleed</li>
-                        <li class="double-star">does not include brake pad, chain, tubeless setup and cable installation services</li>
-                    </ul>
-                </li>
-
                 <!-- Complete Tune -->
                 <li>
                     <h3>
@@ -142,7 +160,42 @@
                         <li class="double-star">does not include brake pad, chain, tubeless setup and cable installation services</li>
                     </ul>
                 </li>
+
+                <!-- Singlespeed Tune -->
+                <li>
+                    <h3>
+                        Single Speed Tune
+                        <span class="pull-right">
+                            <sup>$</sup>65
+                        </span>
+                    </h3>
+                    <ul role="list">
+                        <li class="single-dash">Align and adjust brakes</li>
+                        <li class="single-dash">Torque all fasteners</li>
+                        <li class="single-dash">Hubs and headset adjusted</li>
+                        <li class="single-dash">Bottom bracket inspected</li>
+                        <li class="single-dash margin-bottom">Inflate tires</li>
+                        <li class="single-star">chain install and flat fix/ tubeless re-juice service included</li>
+                        <li class="double-star">does not include hydraulic brake bleed</li>
+                        <li class="double-star">does not include brake pad, chain, tubeless setup and cable installation services</li>
+                    </ul>
+                </li>
             </ul>
+        </section>
+        <section class="about">
+            <h2>About</h2>
+            <div class="images">
+                <img src="assets/images/dosequix.jpg" />
+            </div>
+            <p>
+                Drop in off a shallow rock slab and then whip through a few tight berms. Out of the parking lot, take your first left. The turns are all smooth berms and easy to ride and not wash out. Have fun and hang on tight! So be careful with your carbon frames!
+            </p>
+            <p>
+                Logs embedded in the trail have been installed to signal technical terrain. Sadly, a better trail in this same zone (Barney Lake) is designated wilderness and is therefore 'unlawful' to ride. The climb up from Marlette Lake trail is pretty tough, but relatively short. Chewed up, lots of braking bumps, but still fun. Mostly dry with some small mud puddles.
+            </p>
+            <p>
+                Although it's not technical there are plenty of opportunities to slip in the loose rock and end up with some serious road rash, especially at the speeds you'll be going on the downhills! After a very quick downhill out of the gate, the route climbs up through big forest. Starts off flowy with some good jumps then gets into more technical rock gardens. Freeze-thaw cycle isn't awful, but does make this trail rather slick. Check yourself before you wreck yourself.
+            </p>
         </section>
         <section class="brands">
             <h2>Brands</h2>
@@ -157,20 +210,8 @@
                     <img src="assets/images/logos/kraft.png" />
                 </li>
             </ul>
-
         </section>
-        <section>
-            <h2>About</h2>
-            <p>
-                Drop in off a shallow rock slab and then whip through a few tight berms. Out of the parking lot, take your first left. The turns are all smooth berms and easy to ride and not wash out. Have fun and hang on tight! So be careful with your carbon frames!
-            </p>
-            <p>
-                Logs embedded in the trail have been installed to signal technical terrain. Sadly, a better trail in this same zone (Barney Lake) is designated wilderness and is therefore 'unlawful' to ride. The climb up from Marlette Lake trail is pretty tough, but relatively short. Chewed up, lots of braking bumps, but still fun. Mostly dry with some small mud puddles.
-            </p>
-            <p>
-                Although it's not technical there are plenty of opportunities to slip in the loose rock and end up with some serious road rash, especially at the speeds you'll be going on the downhills! After a very quick downhill out of the gate, the route climbs up through big forest. Starts off flowy with some good jumps then gets into more technical rock gardens. Freeze-thaw cycle isn't awful, but does make this trail rather slick. Check yourself before you wreck yourself.
-            </p>
-        </section>
+    </div>
     </main>
     <div class="bg irridescent">
         <!-- <img src="assets/images/opalescent.jpg" /> -->
