@@ -117,6 +117,19 @@ ul {
     max-width: 100%;
 }
 
+.hours li {
+    display: table-row;
+}
+
+.hours .day,
+.hours .hour {
+    display: table-cell;
+}
+
+.hours .hour {
+    padding-left: 40px;
+}
+
 
 
 /* ABOUT */
