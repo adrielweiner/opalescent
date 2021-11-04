@@ -1,11 +1,13 @@
 @font-face {
     font-family: OktaNeue;
     src: url(../assets/fonts/OktaNeueUltraLight/font.woff2);
+    font-display: swap
 }
 
 @font-face {
     font-family: OktaNeueBold;
     src: url(../assets/fonts/OktaNeueBlackItalic/font.woff2);
+    font-display: swap
 }
 
 
