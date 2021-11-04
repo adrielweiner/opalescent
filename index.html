@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- SEO STUFF -->
     <title>Opalescent Cyclery</title>
@@ -12,7 +11,6 @@
     <link rel="stylesheet" href="styles/tabset.css">
 
 </head>
-
 <body>
     <header>
         <div class="header-text">
@@ -26,240 +24,293 @@
     </header>
     <hr aria-hidden="true">
     <main class="tabset">
-            <input
-                type="radio"
-                name="tabset_1"
-                id="tabset_1_contact"
-                hidden
-                aria-hidden="true"
-                checked
-            >
-            <input
-                type="radio"
-                name="tabset_1"
-                id="tabset_1_services"
-                hidden
-                aria-hidden="true"
-            >
-            <input
-                type="radio"
-                name="tabset_1"
-                id="tabset_1_about"
-                hidden
-                aria-hidden="true"
-            >
-            <input
-                type="radio"
-                name="tabset_1"
-                id="tabset_1_brands"
-                hidden
-                aria-hidden="true"
-            >
-            <ul hidden aria-hidden="true">
-                <li><label for="tabset_1_contact">Info</label></li>
-                <li><label for="tabset_1_services">Services</label></li>
-                <li><label for="tabset_1_about">About</label></li>
-                <!-- <li><label for="tabset_1_brands">Brands</label></li> -->
-            </ul>
-            <div>
-        <section class="contact">
-            <img src="assets/images/phone-edit.jpg" />
-            <h2>Info</h2>
-            <div class="content">
-                <!-- <h4 class="margin-none">Hours:</h4> -->
-                <div class="contact-info">
-                    <!-- Address & Google Maps Link -->
-                    <!-- change url after 'href="' to change the link -->
-                    <!-- change content between > & < to change what displays -->
-                    <a class="line-height" href="https://goo.gl/maps/e4TJxpiDsvC7u2636">814 6th Avenue<br />Tacoma, WA 98405</a>
+        <!-- NAV  -->
+        <input checked type="radio" name="tabset_1" id="tabset_1_contact" hidden aria-hidden="true">
+        <input type="radio" name="tabset_1" id="tabset_1_services" hidden aria-hidden="true">
+        <input type="radio" name="tabset_1" id="tabset_1_about" hidden aria-hidden="true">
+        <input type="radio" name="tabset_1" id="tabset_1_brands" hidden aria-hidden="true">
+        <!-- NAMES @ THE TOP -->
+        <ul hidden aria-hidden="true" class="nav">
+            <li>
+                <label for="tabset_1_contact">
+                    Info
+                </label>
+            </li>
+            <li>
+                <label for="tabset_1_services">
+                    Services
+                </label>
+            </li>
+            <li>
+                <label for="tabset_1_about">
+                    About
+                </label>
+            </li>
+        </ul>
 
-                    <!-- Telephone Link -->
-                    <!-- change number after 'href="tel:' to change what number gets called  -->
-                    <!-- change content between > & < to change what displays -->
-                    <a href="tel:2537775546">(253) 777-5546</a>
+        <!-- CONTENT -->
+        <div>
+            <!-- ********************* -->
+            <!--     INFO/CONTACT      -->
+            <!-- ********************* -->
+            <section class="contact">
+                <img src="assets/images/phone-edit.jpg" />
+                <h2>Info</h2>
+                <div class="content">
+                    <!-- <h4 class="margin-none">Hours:</h4> -->
+                    <div class="contact-info">
+                        <!-- Address & Google Maps Link -->
+                        <!-- change url after 'href="' to change the link -->
+                        <!-- change content between > & < to change what displays -->
+                        <a class="line-height" href="https://goo.gl/maps/e4TJxpiDsvC7u2636">
+                            814 6th Avenue
+                            <br />
+                            Tacoma, WA 98405
+                        </a>
 
-                    <!-- Email Link -->
-                    <!-- change email after 'href="mailto:' to change what email opens  -->
-                    <!-- change content between > & < to change what displays -->
-                    <a href="mailto:shop@opalescentcyclery.com">shop@opalescentcyclery.com</a>
+                        <!-- Telephone Link -->
+                        <!-- change number after 'href="tel:' to change what number gets called  -->
+                        <!-- change content between > & < to change what displays -->
+                        <a href="tel:2537775546">
+                            (253) 777-5546
+                        </a>
 
-                    <a href="https://www.instagram.com/opalescentcyclery/">instagram</a>
+                        <!-- Email Link -->
+                        <!-- change email after 'href="mailto:' to change what email opens  -->
+                        <!-- change content between > & < to change what displays -->
+                        <a href="mailto:shop@opalescentcyclery.com">
+                            shop@opalescentcyclery.com
+                        </a>
 
-                    <!-- <a href="">facebook</a> -->
+                        <a href="https://www.instagram.com/opalescentcyclery/">
+                            instagram
+                        </a>
+
+                        <!-- <a href="">
+                            facebook
+                        </a> -->
+                    </div>
+                    <ul class="hours">
+                        <!-- Monday -->
+                        <li>
+                            <span class="day">
+                                Monday
+                            </span>
+                            <span class="hour">
+                                closed
+                            </span>
+                        </li>
+                        <!-- Tuesday -->
+                        <li>
+                            <span class="day">
+                                Tuesday
+                            </span>
+                            <span class="hour">
+                                closed
+                            </span>
+                        </li>
+                        <!-- Wednesday -->
+                        <li>
+                            <span class="day">
+                                Wednesday
+                            </span>
+                            <span class="hour">
+                                11AM - 7PM
+                            </span>
+                        </li>
+                        <!-- Thursday -->
+                        <li>
+                            <span class="day">
+                                Thursday
+                            </span>
+                            <span class="hour">
+                                11AM - 7PM
+                            </span>
+                        </li>
+                        <!-- Friday -->
+                        <li>
+                            <span class="day">
+                                Friday
+                            </span>
+                            <span class="hour">
+                                11AM - 7PM
+                            </span>
+                        </li>
+                        <!-- Saturday -->
+                        <li>
+                            <span class="day">
+                                Saturday
+                            </span>
+                            <span class="hour">
+                                11AM - 5PM
+                            </span>
+                        </li>
+                        <!-- Sunday -->
+                        <li>
+                            <span class="day">
+                                Sunday
+                            </span>
+                            <span class="hour">
+                                closed
+                            </span>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="hours">
+            </section>
+
+            <!-- ********************* -->
+            <!--       SERVICES        -->
+            <!-- ********************* -->
+            <section class="services">
+                <img src="assets/images/stick.jpg" />
+                <h2>Services</h2>
+                <ul role="list">
+                    <!-- Basic Tune -->
                     <li>
-                        <span class="day">Monday</span>
-                        <span class="hour">closed</span>
+                        <h3>
+                            Basic Tune
+                            <span class="pull-right dollars">
+                                85
+                            </span>
+                        </h3>
+                        <ul role="list">
+                            <li class="single-dash">Align and adjust brakes</li>
+                            <li class="single-dash">Adjust cable tension and derailleur alignment</li>
+                            <li class="single-dash">Adjust headset</li>
+                            <li class="single-dash">Inspect bottom bracket</li>
+                            <li class="single-dash margin-bottom">Inflate tires</li>
+                            <li class="single-star">does include flat fix service/tubeless re-juice service</li>
+                            <li class="double-star">does not include hydraulic brake bleed</li>
+                            <li class="double-star">does not include brake pad, chain, tubeless setup and cable
+                                installation services</li>
+                        </ul>
                     </li>
+
+
+                    <!-- Standard Tune -->
                     <li>
-                        <span class="day">Tuesday</span>
-                        <span class="hour">closed</span>
+                        <h3>
+                            Standard Tune
+                            <span class="pull-right dollars">
+                                110
+                            </span>
+                        </h3>
+                        <ul role="list">
+                            <li class="single-dash">Everything listed in the Basic Tune</li>
+                            <li class="single-dash">Lateral and vertical wheel true</li>
+                            <li class="single-dash margin-bottom">Adjust hub bearings</li>
+                            <li class="single-star">does include flat fix service/tubeless re-juice service</li>
+                            <li class="double-star">does not include hydraulic brake bleed</li>
+                            <li class="double-star">does not include brake pad, chain, tubeless setup and cable
+                                installation services</li>
+                        </ul>
                     </li>
+
+
+                    <!-- Full Tune -->
                     <li>
-                        <span class="day">Wednesday</span>
-                        <span class="hour">11AM - 7PM</span>
+                        <h3>
+                            Full Tune
+                            <span class="pull-right dollars">
+                                189
+                            </span>
+                        </h3>
+                        <ul role="list">
+                            <li class="single-dash">Everything listed in Standard Tune</li>
+                            <li class="single-dash margin-bottom">Full removal of drivetrain components for deep clean
+                            </li>
+                            <li class="single-star">does include flat fix service/tubeless re-juice service</li>
+                            <li class="double-star">does not include hydraulic brake bleed</li>
+                            <li class="double-star">does not include brake pad, chain, tubeless setup and cable
+                                installation services</li>
+                        </ul>
                     </li>
+
+
+                    <!-- Complete Tune -->
                     <li>
-                        <span class="day">Thursday</span>
-                        <span class="hour">11AM - 7PM</span>
+                        <h3>
+                            Complete Tune
+                            <span class="pull-right dollars">
+                                399+
+                            </span>
+                        </h3>
+                        <ul role="list">
+                            <li class="single-dash">Everything listed in the Full Tune</li>
+                            <li class="single-dash">Complete bike disassembly and all drivetrain parts cleaned</li>
+                            <li class="single-dash margin-bottom">Bearings replaced</li>
+                            <li class="single-star">Includes standard cable and housing</li>
+                            <li class="single-star">Includes hydraulic brake bleed and fluid</li>
+                            <li class="single-star">standard cable and housing is included</li>
+                            <li class="double-star">does include flat fix service/tubeless re-juice service</li>
+                            <li class="double-star">does not include hydraulic brake bleed</li>
+                            <li class="double-star">does not include brake pad, chain, tubeless setup and cable
+                                installation services</li>
+                        </ul>
                     </li>
+                    
+
+                    <!-- Singlespeed Tune -->
                     <li>
-                        <span class="day">Friday</span>
-                        <span class="hour">11AM - 7PM</span>
-                    </li>
-                    <li>
-                        <span class="day">Saturday</span>
-                        <span class="hour">11AM - 5PM</span>
-                    </li>
-                    <li>
-                        <span class="day">Sunday</span>
-                        <span class="hour">closed</span>
+                        <h3>
+                            Single Speed Tune
+                            <span class="pull-right dollars">
+                                65
+                            </span>
+                        </h3>
+                        <ul role="list">
+                            <li class="single-dash">Align and adjust brakes</li>
+                            <li class="single-dash">Torque all fasteners</li>
+                            <li class="single-dash">Hubs and headset adjusted</li>
+                            <li class="single-dash">Bottom bracket inspected</li>
+                            <li class="single-dash margin-bottom">Inflate tires</li>
+                            <li class="single-star">chain install and flat fix/ tubeless re-juice service included</li>
+                            <li class="double-star">does not include hydraulic brake bleed</li>
+                            <li class="double-star">does not include brake pad, chain, tubeless setup and cable
+                                installation services</li>
+                        </ul>
                     </li>
                 </ul>
-            </div>
-        </section>
-        <section class="services">
-            <img src="assets/images/stick.jpg" />
-            <h2>Services</h2>
-            <ul role="list">
-                <!-- Basic Tune -->
-                <li>
-                    <h3>
-                        Basic Tune
-                        <span class="pull-right dollars">
-                            85
-                        </span>
-                    </h3>
-                    <ul role="list">
-                        <li class="single-dash">Align and adjust brakes</li>
-                        <li class="single-dash">Adjust cable tension and derailleur alignment</li>
-                        <li class="single-dash">Adjust headset</li>
-                        <li class="single-dash">Inspect bottom bracket</li>
-                        <li class="single-dash margin-bottom">Inflate tires</li>
-                        <li class="single-star">does include flat fix service/tubeless re-juice service</li>
-                        <li class="double-star">does not include hydraulic brake bleed</li>
-                        <li class="double-star">does not include brake pad, chain, tubeless setup and cable installation services</li>
-                    </ul>
-                </li>
+            </section>
 
-                <!-- Standard Tune -->
-                <li>
-                    <h3>
-                        Standard Tune
-                        <span class="pull-right dollars">
-                            110
-                        </span>
-                    </h3>
-                    <ul role="list">
-                        <li class="single-dash">Everything listed in the Basic Tune</li>
-                        <li class="single-dash">Lateral and vertical wheel true</li>
-                        <li class="single-dash margin-bottom">Adjust hub bearings</li>
-                        <li class="single-star">does include flat fix service/tubeless re-juice service</li>
-                        <li class="double-star">does not include hydraulic brake bleed</li>
-                        <li class="double-star">does not include brake pad, chain, tubeless setup and cable installation services</li>
-                    </ul>
-                </li>
-
-                <!-- Full Tune -->
-                <li>
-                    <h3>
-                        Full Tune
-                        <span class="pull-right dollars">
-                            189
-                        </span>
-                    </h3>
-                    <ul role="list">
-                        <li class="single-dash">Everything listed in Standard Tune</li>
-                        <li class="single-dash margin-bottom">Full removal of drivetrain components for deep clean</li>
-                        <li class="single-star">does include flat fix service/tubeless re-juice service</li>
-                        <li class="double-star">does not include hydraulic brake bleed</li>
-                        <li class="double-star">does not include brake pad, chain, tubeless setup and cable installation services</li>
-                    </ul>
-                </li>
-
-                <!-- Complete Tune -->
-                <li>
-                    <h3>
-                        Complete Tune
-                        <span class="pull-right dollars">
-                            399+
-                        </span>
-                    </h3>
-                    <ul role="list">
-                        <li class="single-dash">Everything listed in the Full Tune</li>
-                        <li class="single-dash">Complete bike disassembly and all drivetrain parts cleaned</li>
-                        <li class="single-dash margin-bottom">Bearings replaced</li>
-                        <li class="single-star">Includes standard cable and housing</li>
-                        <li class="single-star">Includes hydraulic brake bleed and fluid</li>
-                        <li class="single-star">standard cable and housing is included</li>
-                        <li class="double-star">does include flat fix service/tubeless re-juice service</li>
-                        <li class="double-star">does not include hydraulic brake bleed</li>
-                        <li class="double-star">does not include brake pad, chain, tubeless setup and cable installation services</li>
-                    </ul>
-                </li>
-
-                <!-- Singlespeed Tune -->
-                <li>
-                    <h3>
-                        Single Speed Tune
-                        <span class="pull-right dollars">
-                            65
-                        </span>
-                    </h3>
-                    <ul role="list">
-                        <li class="single-dash">Align and adjust brakes</li>
-                        <li class="single-dash">Torque all fasteners</li>
-                        <li class="single-dash">Hubs and headset adjusted</li>
-                        <li class="single-dash">Bottom bracket inspected</li>
-                        <li class="single-dash margin-bottom">Inflate tires</li>
-                        <li class="single-star">chain install and flat fix/ tubeless re-juice service included</li>
-                        <li class="double-star">does not include hydraulic brake bleed</li>
-                        <li class="double-star">does not include brake pad, chain, tubeless setup and cable installation services</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section class="about">
-            <h2>About</h2>
-            <div class="images">
-                <img src="assets/images/forest.jpg" />
-            </div>
-            <p>
-                Drop in off a shallow rock slab and then whip through a few tight berms. Out of the parking lot, take your first left. The turns are all smooth berms and easy to ride and not wash out. Have fun and hang on tight! So be careful with your carbon frames!
-            </p>
-            <div class="images">
-                <img src="assets/images/mountain.jpg" />
-            </div>
-            <p>
-                Logs embedded in the trail have been installed to signal technical terrain. Sadly, a better trail in this same zone (Barney Lake) is designated wilderness and is therefore 'unlawful' to ride. The climb up from Marlette Lake trail is pretty tough, but relatively short. Chewed up, lots of braking bumps, but still fun. Mostly dry with some small mud puddles.
-            </p>
-            <div class="images">
-                <img src="assets/images/bridge.jpg" />
-            </div>
-            <p>
-                Although it's not technical there are plenty of opportunities to slip in the loose rock and end up with some serious road rash, especially at the speeds you'll be going on the downhills! After a very quick downhill out of the gate, the route climbs up through big forest. Starts off flowy with some good jumps then gets into more technical rock gardens. Freeze-thaw cycle isn't awful, but does make this trail rather slick. Check yourself before you wreck yourself.
-            </p>
-        </section>
-        <section class="brands">
-            <h2>Brands</h2>
-            <ul role="list" class="logos">
-                <li>
-                    <img src="assets/images/logos/kraft.png" />
-                </li>
-                <li>
-                    <img src="assets/images/logos/kraft.png" />
-                </li>
-                <li>
-                    <img src="assets/images/logos/kraft.png" />
-                </li>
-            </ul>
-        </section>
-    </div>
+            <!-- ********************* -->
+            <!--         ABOUT         -->
+            <!-- ********************* -->
+            <section class="about">
+                <h2>About</h2>
+                <div class="images">
+                    <img src="assets/images/forest.jpg" />
+                </div>
+                <p>
+                    Drop in off a shallow rock slab and then whip through a few tight berms. Out of the parking lot,
+                    take your first left. The turns are all smooth berms and easy to ride and not wash out. Have fun and
+                    hang on tight! So be careful with your carbon frames!
+                </p>
+                <div class="images">
+                    <img src="assets/images/mountain.jpg" />
+                </div>
+                <p>
+                    Logs embedded in the trail have been installed to signal technical terrain. Sadly, a better trail in
+                    this same zone (Barney Lake) is designated wilderness and is therefore 'unlawful' to ride. The climb
+                    up from Marlette Lake trail is pretty tough, but relatively short. Chewed up, lots of braking bumps,
+                    but still fun. Mostly dry with some small mud puddles.
+                </p>
+                <div class="images">
+                    <img src="assets/images/bridge.jpg" />
+                </div>
+                <p>
+                    Although it's not technical there are plenty of opportunities to slip in the loose rock and end up
+                    with some serious road rash, especially at the speeds you'll be going on the downhills! After a very
+                    quick downhill out of the gate, the route climbs up through big forest. Starts off flowy with some
+                    good jumps then gets into more technical rock gardens. Freeze-thaw cycle isn't awful, but does make
+                    this trail rather slick. Check yourself before you wreck yourself.
+                </p>
+            </section>
+        </div>
     </main>
+    <!-- GLOWING BACKGROUND -->
     <div class="bg irridescent">
         <!-- <img src="assets/images/opalescent.jpg" /> -->
     </div>
 </body>
-
 </html>
