@@ -214,6 +214,25 @@ ul {
 }
 
 
+/* LOGO */
+.logo-wrapper {
+    text-align: center;
+}
+
+.logo-wrapper.top {
+    margin-bottom: 20px;
+}
+
+.logo-wrapper.bottom {
+    margin-top: 100px;
+}
+
+.logo {
+    max-width: 200px;
+    opacity: 0.8;
+}
+
+
 /* MOBILE */
 @media only screen and (max-width: 400px) {
     body {
@@ -235,26 +254,19 @@ ul {
     right: -200px;
     bottom: -200px;
     left: -200px;
-}
-
-.logo-wrapper {
-    margin-top: 100px;
-    text-align: center;
-}
-
-.logo {
-    max-width: 200px;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .bg.irridescent {
     z-index: -200;
-    background: linear-gradient(270deg, #82ffdf, #ff9a6f, #feff78, #83e5ff, #eeeeff, #ffa9ea, #ff8989, #ffffff);
+    /* background: linear-gradient(270deg, #82ffdf, #ff9a6f, #feff78, #83e5ff, #eeeeff, #ffa9ea, #ff8989, #ffffff); */
+    background: linear-gradient(220deg, #FFDE99, #FFDC99, #FED598, #FCCA96, #FAB994, #F8A392, #F79E91, #EE99AE, #EA96BD, #DA9CC4, #CDA1CA, #C6A4CD, #C4A5CE, #BBB0D2, #A4CEDB, #9BD9DF, #A6D38C, #C3DFA0, #DAE9B0, #E3EDB6);
     background-size: 1600% 1600%;
 
     -webkit-animation: Irridescent 10s ease infinite;
     -moz-animation: Irridescent 10s ease infinite;
     animation: Irridescent 10s ease infinite;
+    animation: Irridescent 15s ease infinite;
 }
 
 @-webkit-keyframes Irridescent {
