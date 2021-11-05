@@ -237,20 +237,14 @@ ul {
     left: -200px;
 }
 
-.bg img {
-    max-width: 400px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.logo-wrapper {
+    margin-top: 100px;
+    text-align: center;
+}
 
-    top: auto;
-    left: auto;
-
-    bottom: 40px;
-    right: 40px;
-    transform: translate(0, 0);
-    opacity: 0.4;
+.logo {
+    max-width: 200px;
+    opacity: 0.8;
 }
 
 .bg.irridescent {
