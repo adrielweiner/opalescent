@@ -1,210 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- SEO STUFF -->
-    <title>&#9674; Opalescent Cyclery &#9674;</title>
+    <title>Opalescent Cyclery</title>
     <meta name="description" content="Opalescent Cyclery - Bicycle Repair - Tacoma">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- STYLE -->
-    <style>
-        body {
-            font-size: 20px;
-            text-align: center;
-            padding: 20px 30px;
-            font-family: 'Courier New', monospace;
-        }
+    <link rel="preload" href="/assets/fonts/OktaNeueUltraLight/font.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/OktaNeueBlackItalic/font.woff2" as="font" type="font/woff2" crossorigin>
 
-        main {
-            text-align: center;
-        }
+    <link rel="stylesheet" href="styles/tabset.css">
+    <link rel="stylesheet" href="styles/styles.css">
 
-        ul {
-            padding-left: 0;
-            margin: 0;
-        }
-
-        hr {
-            border: solid black 2px;
-        }
-
-        h1, h3 {
-            font-weight: 400;
-        }
-
-        a,
-        a:visited {
-            color: gray;
-        }
-
-        .logo {
-            max-height: 160px;
-        }
-
-        .header-text {
-            display: inline-block;
-            margin-left: 50px;
-            margin-right: 50px;
-            vertical-align: top;
-        }
-
-        ul.inline li{
-            display: inline;
-        }
-
-        .dot-separated li::before{
-            content: "\25C7";
-        }
-
-        .dot-separated li:first-of-type:before{
-            content: "";
-            margin-right: 0;
-        }
-
-        .horizontal-spacing {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-
-        .horizontal-spacing:first-of-type {
-            margin-left: 0;
-        }
-
-        .horizontal-spacing:last-of-type {
-            margin-right: 0;
-        }
-
-        @media only screen and (min-width: 831px) {
-            .mobile-only {
-                display: none;
-            }
-        }
-
-        @media only screen and (max-width: 830px) {
-            .desktop-only {
-                display: none;
-            }
-        }
-
-        /* https://www.gradient-animator.com */
-        .bg {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-
-        .bg.irridescent {
-            z-index: -200;
-            background: linear-gradient(270deg, #82ffdf, #ff9a6f, #feff78, #83e5ff, #eeeeff, #ffa9ea, #ff8989, #ffffff);
-            background-size: 1600% 1600%;
-
-            -webkit-animation: Irridescent 10s ease infinite;
-            -moz-animation: Irridescent 10s ease infinite;
-            animation: Irridescent 10s ease infinite;
-        }
-
-        @-webkit-keyframes Irridescent {
-            0%{background-position:45% 0%}
-            50%{background-position:56% 100%}
-            100%{background-position:45% 0%}
-        }
-        @-moz-keyframes Irridescent {
-            0%{background-position:45% 0%}
-            50%{background-position:56% 100%}
-            100%{background-position:45% 0%}
-        }
-        @keyframes Irridescent { 
-            0%{background-position:45% 0%}
-            50%{background-position:56% 100%}
-            100%{background-position:45% 0%}
-        }
-
-        .marquee {
-            height: 50px;
-            overflow: hidden;
-            position: relative;
-            width: 300px;
-            margin: 0 auto;
-        }
-        
-        .marquee p {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            line-height: 50px;
-            text-align: center;
-            -moz-transform: translateX(100%);
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-            -moz-animation: scroll-left 1s linear infinite;
-            -webkit-animation: scroll-left 1s linear infinite;
-            animation: scroll-left 10s linear infinite;
-        }
-        
-        @-moz-keyframes scroll-left {
-            0% {
-                -moz-transform: translateX(100%);
-            }
-            100% {
-                -moz-transform: translateX(-100%);
-            }
-        }
-        
-        @-webkit-keyframes scroll-left {
-            0% {
-                -webkit-transform: translateX(100%);
-            }
-            100% {
-                -webkit-transform: translateX(-100%);
-            }
-        }
-        
-        @keyframes scroll-left {
-            0% {
-                -moz-transform: translateX(100%);
-                -webkit-transform: translateX(100%);
-                transform: translateX(100%);
-            }
-            100% {
-                -moz-transform: translateX(-100%);
-                -webkit-transform: translateX(-100%);
-                transform: translateX(-100%);
-            }
-        }
-    </style>
 </head>
-
 <body>
     <header>
-        <img class="logo" alt="Opalescent Cyclery logo" src="./assets/Opalescent-transparent.png">
-        <div class="header-text">
-            <h1>
-                Opalescent Cyclery
-            </h1>
-            <h3>Bicycle Repair</h3>
+        <div class="logo-wrapper top">
+            <img class="logo" src="assets/images/logos/rainbow-logo-small.png" />
         </div>
-        <img class="logo desktop-only" alt="Opalescent Cyclery logo" src="./assets/Opalescent-transparent.png">
     </header>
-    <hr>
-    <main>
-            <br>
-            <div class="marquee">
-                <p>
-                    Under Construction
-                </p>
-            </div>
-            <a href="https://goo.gl/maps/e4TJxpiDsvC7u2636">814 6th Avenue<br/>Tacoma, WA 98405</a>
-            <br>
-            <br>
-            No phone.... yet.
-            <br>
-            <a href="mailto:shop@opalescentcyclery.com">Customer Info &amp; Inquiries</a>
+    <hr aria-hidden="true">
+    <main class="tabset">
+
+        <!-- PAGE CONTENT (Info, Services, About)-->
+        <div>
+            <!-- ********************* -->
+            <!--     INFO/CONTACT      -->
+            <!-- ********************* -->
+            <section class="contact">
+                <!-- Info Image -->
+                <!-- <img src="assets/images/phone-edit.jpg" alt="man calling Opalescent Cyclery for help"/> -->
+
+                <h2>Info</h2>  <!-- This header is hidden by tabset stuff-->
+
+                <div class="content">
+                    <div class="contact-info">
+                        <!-- Address & Google Maps Link -->
+                        <!-- change url after 'href="' to change the link -->
+                        <!-- change content between > & < to change what displays -->
+                        <a class="line-height" href="https://goo.gl/maps/e4TJxpiDsvC7u2636">
+                            814 6th Avenue
+                            <br />
+                            Tacoma, WA 98405
+                        </a>
+
+                        <!-- Telephone Link -->
+                        <!-- change number after 'href="tel:' to change what number gets called  -->
+                        <!-- change content between > & < to change what displays -->
+                        <a href="tel:2537775546">
+                            (253) 777-5546
+                        </a>
+
+                        <!-- Email Link -->
+                        <!-- change email after 'href="mailto:' to change what email opens  -->
+                        <!-- change content between > & < to change what displays -->
+                        <a href="mailto:shop@opalescentcyclery.com">
+                            shop@opalescentcyclery.com
+                        </a>
+
+                        <!-- Instagram Link -->
+                        <a href="https://www.instagram.com/opalescentcyclery/">
+                            instagram
+                        </a>
+
+                        <!-- Facebook Link -->
+                        <a href="https://business.facebook.com/opalescentcyclery/">
+                            facebook
+                        </a>
+                    </div>
+                    <ul class="hours">
+                        <!-- Monday -->
+                        <li>
+                            <span class="day">
+                                Monday
+                            </span>
+                            <span class="hour">
+                                closed
+                            </span>
+                        </li>
+                        <!-- Tuesday -->
+                        <li>
+                            <span class="day">
+                                Tuesday
+                            </span>
+                            <span class="hour">
+                                closed
+                            </span>
+                        </li>
+                        <!-- Wednesday -->
+                        <li>
+                            <span class="day">
+                                Wednesday
+                            </span>
+                            <span class="hour">
+                                11AM - 7PM
+                            </span>
+                        </li>
+                        <!-- Thursday -->
+                        <li>
+                            <span class="day">
+                                Thursday
+                            </span>
+                            <span class="hour">
+                                11AM - 7PM
+                            </span>
+                        </li>
+                        <!-- Friday -->
+                        <li>
+                            <span class="day">
+                                Friday
+                            </span>
+                            <span class="hour">
+                                11AM - 7PM
+                            </span>
+                        </li>
+                        <!-- Saturday -->
+                        <li>
+                            <span class="day">
+                                Saturday
+                            </span>
+                            <span class="hour">
+                                11AM - 5PM
+                            </span>
+                        </li>
+                        <!-- Sunday -->
+                        <li>
+                            <span class="day">
+                                Sunday
+                            </span>
+                            <span class="hour">
+                                closed
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
-    <div class="bg irridescent"></div>
+
+    <!-- GLOWING BACKGROUND -->
+    <div class="bg irridescent">
+    </div>
 </body>
 </html>

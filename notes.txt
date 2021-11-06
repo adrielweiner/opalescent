@@ -1,0 +1,2 @@
+Questions/Needs for Opal:
+- Is it possible to combine the asterisks, and just put them after the name/title?
