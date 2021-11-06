@@ -115,6 +115,13 @@ ul {
 
 
 /* CONTACT */
+/* TEMP */
+.contact {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+}
+
 .contact a {
     display: block;
     margin-bottom: 20px;
@@ -266,7 +273,7 @@ ul {
     -webkit-animation: Irridescent 10s ease infinite;
     -moz-animation: Irridescent 10s ease infinite;
     animation: Irridescent 10s ease infinite;
-    animation: Irridescent 15s ease infinite;
+    animation: Irridescent 30s ease infinite;
 }
 
 @-webkit-keyframes Irridescent {
