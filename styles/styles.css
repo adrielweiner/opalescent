@@ -29,6 +29,14 @@
     line-height: 1;
 }
 
+.italic {
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
 .pull-right {
     float: right;
 }
@@ -191,18 +199,20 @@ ul {
 
 .single-dash,
 .single-star,
-.double-star {
+.double-star,
+.single-cross {
     padding-left: 5px;
     margin-left: -5px;
 }
 
-.single-dash {
-    list-style-type: "-";
+.single-star,
+.double-star,
+.single-cross {
+    font-size: 0.8em;
 }
 
-.single-star,
-.double-star {
-    font-size: 0.8em;
+.single-dash {
+    list-style-type: "-";
 }
 
 .single-star {
@@ -211,6 +221,10 @@ ul {
 
 .double-star {
     list-style-type: "**";
+}
+
+.single-cross {
+    list-style-type: "†";
 }
 
 

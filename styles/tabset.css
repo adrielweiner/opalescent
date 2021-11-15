@@ -51,7 +51,7 @@
   }
   
   .tabset > div > section,
-  .tabset > div > section h2 {
+  .tabset > div > section > h2 {
     position:absolute;
     top:-999em;
     left:-999em;
