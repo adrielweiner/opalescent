@@ -123,12 +123,6 @@ ul {
 
 
 /* CONTACT */
-/* TEMP */
-.contact {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-}
 
 .contact a {
     display: block;
@@ -137,10 +131,6 @@ ul {
 
 .contact a:last-of-type {
     margin-bottom: 0;
-}
-
-.contact a:first-of-type {
-    /* margin-top: 20px; */
 }
 
 .contact img {
