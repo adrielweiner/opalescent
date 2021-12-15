@@ -216,15 +216,15 @@ ul {
 }
 
 .single-star {
-    list-style-type: "*";
+    list-style-type: "\002A";
 }
 
 .double-star {
-    list-style-type: "**";
+    list-style-type: "\002A\002A";
 }
 
 .single-cross {
-    list-style-type: "†";
+    list-style-type: "\2020";
 }
 
 
