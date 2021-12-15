@@ -22,6 +22,30 @@
     </header>
     <hr aria-hidden="true">
     <main class="tabset">
+        <!-- NAV  -->
+        <input checked type="radio" name="tabset_1" id="tabset_1_contact" hidden aria-hidden="true">
+        <input type="radio" name="tabset_1" id="tabset_1_services" hidden aria-hidden="true">
+        <!-- <input type="radio" name="tabset_1" id="tabset_1_about" hidden aria-hidden="true"> -->
+
+        <!-- NAMES @ THE TOP -->
+        <!-- Change these to change what displays under the header -->
+        <ul hidden aria-hidden="true" class="nav">
+            <li>
+                <label for="tabset_1_contact">
+                    Info
+                </label>
+            </li>
+            <li>
+                <label for="tabset_1_services">
+                    Services
+                </label>
+            </li>
+            <!-- <li>
+                <label for="tabset_1_about">
+                    About
+                </label>
+            </li> -->
+        </ul>
 
         <!-- PAGE CONTENT (Info, Services, About)-->
         <div>
@@ -30,7 +54,7 @@
             <!-- ********************* -->
             <section class="contact">
                 <!-- Info Image -->
-                <!-- <img src="assets/images/phone-edit.jpg" alt="man calling Opalescent Cyclery for help"/> -->
+                <img src="assets/images/powerline.jpg" alt="man calling Opalescent Cyclery for help"/>
 
                 <h2>Info</h2>  <!-- This header is hidden by tabset stuff-->
 
@@ -135,6 +159,206 @@
                         </li>
                     </ul>
                 </div>
+            </section>
+
+            <!-- ********************* -->
+            <!--       SERVICES        -->
+            <!-- ********************* -->
+            <section class="services">
+                <!-- Services Image -->
+                <img src="assets/images/stick.jpg" alt="stick stuck in bike wheel"/>
+
+                <h2>Services</h2>  <!-- This header is hidden by tabset stuff-->
+
+                <ul role="list">
+                    <!-- Basic Tune -->
+                    <li>
+                        <h3>
+                            Adjustments Tune
+                            <span class="pull-right dollars">
+                                85
+                            </span>
+                        </h3>
+                        <ul role="list">
+                            <li class="single-dash">Align and adjust brakes</li>
+                            <li class="single-dash">Adjust cable tension and derailleur alignment</li>
+                            <li class="single-dash">Adjust headset</li>
+                            <li class="single-dash">Inspect bottom bracket</li>
+                            <li class="single-dash">Inflate tires</li>
+                            <li class="italic">flat fix/re-juice tubeless sealant service included with this package</li>
+                        </ul>
+                    </li>
+
+
+                    <!-- Standard Tune -->
+                    <li>
+                        <h3>
+                            Standard Tune
+                            <span class="pull-right dollars">
+                                110
+                            </span>
+                        </h3>
+                        <ul role="list">
+                            <li class="single-dash">Everything listed in the Basic Tune</li>
+                            <li class="single-dash">Lateral and vertical wheel true</li>
+                            <li class="single-dash">Adjust hub bearings</li>
+                            <li class="italic">Chain installation service included with this package</li>
+                        </ul>
+                    </li>
+
+
+                    <!-- Full Tune -->
+                    <li>
+                        <h3>
+                            Full Tune
+                            <span class="pull-right dollars">
+                                189
+                            </span>
+                        </h3>
+                        <ul role="list">
+                            <li class="single-dash">Everything listed in Standard Tune</li>
+                            <li class="single-dash">Full removal of drivetrain components for deep clean</li>
+                            <li class="italic">Shift cable and brake cable install service included</li>
+                        </ul>
+                    </li>
+
+
+                    <!-- Complete Tune -->
+                    <li>
+                        <h3>
+                            Complete Overhaul
+                            <span class="pull-right dollars">
+                                399+
+                            </span>
+                        </h3>
+                        <ul role="list">
+                            <li class="single-dash">Everything listed in the Full Tune</li>
+                            <li class="single-dash">Complete bike disassembly and all drivetrain parts cleaned</li>
+                            <li class="single-dash">Bearings replaced or serviced</li>
+                            <li class="italic">Includes standard cable and housing</li>
+                            <li class="italic">Includes hydraulic brake bleed and fluid</li>
+                        </ul>
+                    </li>
+                    
+
+                    <!-- Singlespeed Tune -->
+                    <li>
+                        <h3>
+                            Single Speed Tune
+                            <span class="pull-right dollars">
+                                65
+                            </span>
+                        </h3>
+                        <ul role="list">
+                            <li class="single-dash">Align and adjust brakes</li>
+                            <li class="single-dash">Torque all fasteners</li>
+                            <li class="single-dash">Hubs and headset adjusted</li>
+                            <li class="single-dash">Bottom bracket inspected</li>
+                            <li class="single-dash">Inflate tires</li>
+                            <li class="italic">flat fix/re-juice tubeless sealant and chain installation service included with this package</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="italic center">
+                    All additional services added to packages are discounted 20% of the listed cost
+                </p>
+                <!-- ADD SERVICES DISCLAIMER -->
+                <div class="ala-carte margin-bottom">
+                    <!-- <h2>General Services</h2> -->
+                    <h3>Tire Services</h3>
+                    <ul>
+                        <li>
+                            Standard Tube 
+                            <span class="pull-right">$15.00</span>
+                        </li>
+                        <li>
+                            Tubeless Rejuice 
+                            <span class="pull-right">$15.00</span>
+                        </li>
+                        <li>
+                            Tubeless Setup
+                            <span class="italic">includes rim inspection</span>
+                            <span class="pull-right">$40.00</span>
+                        </li>
+                        <li>
+                            Internal Hub
+                            <span class="italic">includes shifting inspection</span>
+                            <span class="pull-right">$30.00</span>
+                        </li>
+                        <li>
+                            Hub Drive (E-bike) 
+                            <span class="pull-right">$45.00</span>
+                        </li>
+                    </ul>
+
+                    <h3>Brake Services</h3>
+                    <ul>
+                        <li>
+                            Brake Bleed (mineral oil)
+                            <span class="pull-right">$50.00</span>
+                        </li>
+                        <li>
+                            Brake Bleed (DOT Fluid)
+                            <span class="pull-right">$55.00</span>
+                        </li>
+                    </ul>
+
+                    <h3>Drivetrain Services</h3>
+                    <ul>
+                        <li>
+                            Chain install
+                            <span class="pull-right">$20.00</span>
+                        </li>
+                    </ul>
+
+                    <p>
+                        Don&rsquo;t see the service you are looking for? Ala Carte services start at $25.00 and are charged the shop rate of
+                        $100.00/hour after the first 30 minutes. Please call for details.
+                    </p>
+                </div>
+                <div class="disclaimers">
+                    <ul>
+                        <li class="single-star">Prices reflect labor done and do not include parts or accessories </li>
+                        <li class="single-cross">Additional charges for other services and installations may apply</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ********************* -->
+            <!--         ABOUT         -->
+            <!-- ********************* -->
+            <section class="about">
+                <!-- About Image 1 -->
+                <img src="assets/images/forest.jpg" alt="people riding bikes through the forest" />
+                
+                <h2>About</h2>  <!-- This header is hidden by tabset stuff-->
+
+                <p>
+                    Drop in off a shallow rock slab and then whip through a few tight berms. Out of the parking lot,
+                    take your first left. The turns are all smooth berms and easy to ride and not wash out. Have fun and
+                    hang on tight! So be careful with your carbon frames!
+                </p>
+
+                <!-- About Image 2 -->
+                <img src="assets/images/mountain.jpg" alt="bike on gravel road in front of mountain" />
+                
+                <p>
+                    Logs embedded in the trail have been installed to signal technical terrain. Sadly, a better trail in
+                    this same zone (Barney Lake) is designated wilderness and is therefore 'unlawful' to ride. The climb
+                    up from Marlette Lake trail is pretty tough, but relatively short. Chewed up, lots of braking bumps,
+                    but still fun. Mostly dry with some small mud puddles.
+                </p>
+                
+                <!-- About Image 3 -->
+                <img src="assets/images/bridge.jpg" alt="man crossing a log bridge with his bike" />
+                
+                <p>
+                    Although it's not technical there are plenty of opportunities to slip in the loose rock and end up
+                    with some serious road rash, especially at the speeds you'll be going on the downhills! After a very
+                    quick downhill out of the gate, the route climbs up through big forest. Starts off flowy with some
+                    good jumps then gets into more technical rock gardens. Freeze-thaw cycle isn't awful, but does make
+                    this trail rather slick. Check yourself before you wreck yourself.
+                </p>
             </section>
         </div>
     </main>
