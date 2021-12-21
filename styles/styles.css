@@ -33,6 +33,14 @@
     font-style: italic;
 }
 
+.small {
+    font-size: 0.65em;
+}
+
+.grey {
+    color: #666666;
+}
+
 .center {
     text-align: center;
 }
